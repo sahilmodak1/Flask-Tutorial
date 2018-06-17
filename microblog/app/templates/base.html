@@ -1,16 +1,16 @@
 <html>
     <head>
       {% if title %}
-      <title>{{ title }} - Microblog</title>
+      <title>{{ title }} - G2 Crowd Roster</title>
       {% else %}
-      <title>Welcome to Microblog</title>
+      <title>Welcome to G2 Crowd Roster</title>
       {% endif %}
     </head>
     <body>
         <!--Index is the name given to approute in routes.py. 
             You cannot replace it with index.html-->
         <div>
-          Microblog: 
+          G2 Crowd Roster: 
           <a href="{{ url_for('index') }}">Home</a>
           
           {% if current_user.is_anonymous %}
